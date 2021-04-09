@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="/chat-app-css-illustration-master/index.css" />
+  <title>Frontend Mentor | Chat app CSS illustration</title>
+</head>
+
+<body>
+  <div class="purple-back"></div>
+  <main>
+    <section class="chat">
+      <header class="chat__header">
+        <div class="chat__header-block"></div>
+        <div class="chat__header-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 172 172"
+            style="fill: #000000">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g fill="#ffffff">
+                <path
+                  d="M114.55469,22.87734c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-57.33333,57.33333c-2.23811,2.23904 -2.23811,5.86825 0,8.10729l57.33333,57.33333c1.43802,1.49778 3.5734,2.10113 5.5826,1.57735c2.0092,-0.52378 3.57826,-2.09284 4.10204,-4.10204c0.52378,-2.0092 -0.07957,-4.14458 -1.57735,-5.5826l-53.27969,-53.27969l53.27969,-53.27969c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <img src="/chat-app-css-illustration-master/images/avatar.jpg" alt="a man with a tree in the back" class="chat__header-img" />
+        <h2 class="chat__header-id">Samuel Green</h2>
+        <div class="chat__header-state">Available to Walk</div>
+        <div class="chat__header-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 172 172"
+            style="fill: #000000">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g id="original-icon" fill="#ffffff">
+                <path
+                  d="M86,22.93333c-9.4993,0 -17.2,7.7007 -17.2,17.2c0,9.4993 7.7007,17.2 17.2,17.2c9.4993,0 17.2,-7.7007 17.2,-17.2c0,-9.4993 -7.7007,-17.2 -17.2,-17.2zM86,68.8c-9.4993,0 -17.2,7.7007 -17.2,17.2c0,9.4993 7.7007,17.2 17.2,17.2c9.4993,0 17.2,-7.7007 17.2,-17.2c0,-9.4993 -7.7007,-17.2 -17.2,-17.2zM86,114.66667c-9.4993,0 -17.2,7.7007 -17.2,17.2c0,9.4993 7.7007,17.2 17.2,17.2c9.4993,0 17.2,-7.7007 17.2,-17.2c0,-9.4993 -7.7007,-17.2 -17.2,-17.2z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </header>
+      <p class="chat__message-left">
+        That sounds great. I’d be <br />
+        happy with that.
+      </p>
+      <p class="chat__message-left">
+        Could you send over some <br />
+        pictures of your dog, please?
+      </p>
+      <div>
+        <img src="/chat-app-css-illustration-master/images/dog-image-1.jpg" alt="a dog looking up" class="imgs" />
+        <img src="/chat-app-css-illustration-master/images/dog-image-2.jpg" alt="a dog smiling" class="imgs" />
+        <img src="/chat-app-css-illustration-master/images/dog-image-3.jpg" alt="a dog with a stick" class="imgs" />
+      </div>
+      <p class="chat__message-right">
+        Here are a few pictures. She’s <br />
+        a happy girl!
+      </p>
+      <p class="chat__message-right short">Can you make it?</p>
+      <p class="chat__message-left">
+        She looks so happy! The time <br />
+        we discussed works. How <br />
+        long shall I take her out for?
+      </p>
+      <form class="chat_option">
+        <label class="container"><span class="walk">30 minutes walk</span><span class="price">$29</span>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container"><span class="walk">1 hour walk</span><span class="price">$49</span>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      </form>
+      <form class="placeholder" action="#">
+        <input class="chat__placeholder" placeholder="Type a message…" type="text" />
+        <button class="chat__btn-send" type="reset">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" height="16" viewBox="0 0 172 172"
+            style="fill: #ffffff">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g fill="#ffffff">
+                <path
+                  d="M93.6755,86l-27.38383,-27.38383c-2.967,-2.967 -2.967,-7.783 0,-10.75v0c2.967,-2.967 7.783,-2.967 10.75,0l33.067,33.067c2.80217,2.80217 2.80217,7.33867 0,10.13367l-33.067,33.067c-2.967,2.967 -7.783,2.967 -10.75,0v0c-2.967,-2.967 -2.967,-7.783 0,-10.75z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </button>
+      </form>
+    </section>
+    <section>
+      <h1>Simple booking</h1>
+      <p class="text">
+        Stay in touch with our dog walkers through the chat interface. This
+        makes it easy to discuss arrangements and make bookings. Once the walk
+        has been completed you can rate your walker and book again all through
+        the chat.
+      </p>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+    <a href="https://stoic-feynman-20e51a.netlify.app/">Joaquin Villanueva</a>.
+  </div>
+</body>
+
+</html>
