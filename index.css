@@ -6,27 +6,27 @@ html{
     box-sizing: border-box;
     background-color: hsl(270, 20%, 96%);
 }
-:root{
---Pale-Violet: hsl(276, 100%, 81%); /* (sub-heading at the top of the app UI) */
---Moderate-Violet: hsl(276, 55%, 52%); /* (chat on the left) */
---Desaturated-Dark-Violet: hsl(271, 15%, 43%); /* (chat on the right) */
---Grayish-Blue: hsl(206, 6%, 79%); /* (placeholder text) */
---Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%); /* (main heading) */
---Dark-Grayish-Violet: hsl(270, 7%, 64%); /* (paragraph) */
+body{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    height: 100vh;
+    place-items: center;
 }
 .purple-back{
-padding: 230px 38%;
-position: absolute;
-background-color: hsl(276, 69%, 57%);
-z-index: -1;
-left: -25%;
-top: 0px;
-border-bottom-right-radius: 75%;
+    padding: 230px 38%;
+    position: absolute;
+    background-color: hsl(276, 69%, 57%);
+    z-index: -1;
+    left: -25%;
+    top: 0px;
+    border-bottom-right-radius: 75%;
 }
 .chat{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
     border:10px solid hsl(0, 0%, 100%);
     border-radius: 25px;
-    position: relative;
     margin: auto;
     margin-top: 60px;
     width: 225px;
@@ -104,7 +104,6 @@ border-bottom-right-radius: 75%;
     top: 10px;
     box-shadow: 16px 30px 78px -19px rgba(0,0,0,0.34);
 }
-
 .imgs{
     position: relative;
     display: inline-flex;
@@ -180,8 +179,6 @@ border-bottom-right-radius: 75%;
 .container input:hover  ~ .checkmark {
     background-color: #ccc;
 }
-  
-  /* When the radio button is checked, add a blue background */
 .chat_option input:checked ~ .checkmark {
     background-color: #2196F3;
 }
@@ -215,49 +212,67 @@ border-bottom-right-radius: 75%;
     background-color: hsl(271, 36%, 24%);
     width: 23px;
     height: 23px;
-
+}
+.right-text{
+    position: relative;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin: 10px;
 }
 h1{
-    position: relative;
     text-align: center;
     top: 10px;
     color: hsl(271, 36%, 24%);
     font-weight: 700;
 }
 .text{
-    position: relative;
     text-align: center;
     color: hsl(270, 7%, 64%);
     font-weight: 500;
 }
 .attribution {
-    position: relative;
+    width: 100%;
+    min-height: 27px;
     bottom: 2px;
     left: 0px;
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
     background-color: hsl(276, 69%, 57%);
     background-image:  linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
     color: white;
     font-family: 'Rubik', sans-serif;
+    grid-column: 1/4;
+    grid-row: 2/3;
 }
 .attribution a {
     color: white;
 }
 @media only screen and (min-width: 768px){
-    h1{
-        font-size: 35px;
+    body{
+        grid-template-columns: repeat(3, 1fr);
+        place-content: center;
     }
-    .text{
-        width: 50%;
-        position: relative;
-        text-align: center;
-        left: 25%;
+
+    .right-text{
+        position: absolute;
+
     }
     .chat{
-        width: 35%;
-        height: 480px;
+        position: relative;
+        grid-column: 1/3;
     }
+            /*
+    h1{
+        font-size: 35px;
+        text-align: left;
+    }
+    .text{
+        width: 40vw;
+        max-width: 700px;
+        font-size: 1rem;
+        text-align: left;
+    }
+
     .chat__header{
         width: auto;
         height: 70px;
@@ -286,8 +301,8 @@ h1{
     .chat__header-menu{
         width: 9%;
     }
-    h1 {
-        position: absolute;
-        right: 0px;
-    }
+    .attribution{
+        position: relative;
+        display: none;
+    } */
 }
