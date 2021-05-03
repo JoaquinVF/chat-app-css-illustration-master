@@ -6,6 +6,9 @@ html{
     box-sizing: border-box;
     background-color: hsl(270, 20%, 96%);
 }
+*{
+    -webkit-tap-highlight-color: transparent;
+}
 body{
     display: grid;
     grid-template-rows: 1fr 1fr;
