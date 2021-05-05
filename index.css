@@ -218,6 +218,9 @@ body{
     width: 23px;
     height: 23px;
 }
+.chat__btn-send:active{
+    background-color: hsl(269, 34%, 30%);
+}
 .right-text{
     position: relative;
     max-width: 400px;
